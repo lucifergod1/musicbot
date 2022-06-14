@@ -17,14 +17,14 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("5574660", "5574660"))
-API_HASH = getenv("3315b5f19db17f738044414f8e8d55b2")
+API_ID = int(getenv("API_ID", "5574660"))
+API_HASH = getenv("API_HASH")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("5318089386:AAE7QBMGeFLuiq3LFsWJAjOuvez272JhmgA")
+BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("mongodb+srv://moviesclub:chintamani2@cluster0.pwgvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -40,7 +40,7 @@ SONG_DOWNLOAD_DURATION = int(
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001793624886"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("Sakura")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
 
 # Your User ID.
 OWNER_ID = list(
@@ -48,7 +48,7 @@ OWNER_ID = list(
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("d20053d2-e3bc-415b-9d39-778901e32007")
+HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
@@ -135,7 +135,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("BQB--jncuLjQd9Y0wMYlvDod1O-uVxO9T4A5MQzntAmtTb8oYVpxL03RBcpbj1OYnatv2IuFHMlUr7jPE2S9ZWpdn35ugw7XJBKYGT3GelFrtFnqWgfowqElsHbG_6eoKB6vCzuflA5Rznbgd-cXqTIJOqmhAgTQNqS8kuTzAAfvqyQ8QsEaWoOLbifIisO73ODT3Qy6gOjaUkqiUytB_hiPxKrQCBzFIVz5sPjbuizWnjnd4HTrCjwLbJP-TQgRy9KhGp2cNCZbcvnFbc2ofvNrs8vlIRJL3UXfsFWCvyFPbNwz_BGIQglLJeclQv92qO0aWOUB4vOpzZRmjzcOHkeTZxdjFQA", None)
+STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
